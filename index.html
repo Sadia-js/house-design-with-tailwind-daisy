@@ -121,19 +121,16 @@
             <div class="dropdown flex lg:hidden">
               <div tabindex="0" role="button" class="btn bg-white btn-circle">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h7"
-                  />
-                </svg>
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="inline-block h-5 w-5 stroke-current">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
               </div>
               <ul
                 tabindex="0"
@@ -150,7 +147,7 @@
         </div>
         <!-- hero section -->
         <div class="hero mt-24 lg:mt-10">
-          <div class="hero-content text-center">
+          <div class="hero-content px-0 text-center">
             <div class="max-w-xl">
               <img src="./assets/banner.png" alt="banner" />
               <br />
@@ -182,97 +179,99 @@
     </header>
     <main>
       <!-- Featured property -->
-      <section class="bg-body mt-8 py-7 lg:py-10">
-          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-md text-center">
-            Featured Property
-          </h1>
-          <p class="text-desc w-full md:w-3/4 lg:w-2/4 text-center py-3 mx-auto">Our featured property boasts exceptional design and premium features, offering unparalleled comfort and style. With top-notch amenities and a prime location, it's a standout choice for discerning buyers.</p>
-
-        <!-- properties -->
-         <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto px-5 md:px-16 py-5">
-          <!-- property-1 -->
-          <div class="card bg-white rounded-none shadow-sm">
-            <figure>
-              <img class="w-full px-6 pt-8 h-56"
-                src="./assets/property1.jpg"
-                alt="property-1" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title font-bold">Serene Villa </h2>
-              <p class="text-blue-600 font-bold">$50000.00 <span class="text-black">/M</span></p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-yellow-400"
-               />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked="checked"/>
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-              </div>
-              <div class="card-actions justify-between mt-2">
-                <span><i class="fa-solid fa-bed-pulse"></i> 4 Bedrooms</span> 
-                <span><i class="fa-solid fa-sink"></i> 2 Bathrooms</span> 
-              </div>
-            </div>
-          </div>
-          <!-- property-2 -->
-          <div class="card bg-white rounded-none shadow-sm">
-            <figure>
-              <img class="w-full px-6 pt-8 h-56"
-                src="./assets/property2.webp"
-                alt="property-2" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title font-bold">Bella Vista Villa</h2>
-              <p class="text-blue-600 font-bold">$30000.00 <span class="text-black">/M</span></p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-yellow-400"
-                  checked="checked"
-               />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400"/>
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400"/>
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-              </div>
-              <div class="card-actions justify-between mt-2">
-                <span><i class="fa-solid fa-bed-pulse"></i> 3 Bedrooms</span> 
-                <span><i class="fa-solid fa-sink"></i> 1 Bathrooms</span> 
+      <section class="bg-body">
+          <div class="container mx-auto px-4 md:px-16 py-5">
+            <h1 class="text-2xl mt-6 md:text-3xl lg:text-4xl font-bold drop-shadow-md text-center">
+              Featured Property
+            </h1>
+            <p class="text-desc w-full md:w-3/4 lg:w-2/4 text-center py-3 mx-auto">Our featured property boasts exceptional design and premium features, offering unparalleled comfort and style. With top-notch amenities and a prime location, it's a standout choice for discerning buyers.</p>
+  
+          <!-- properties -->
+           <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- property-1 -->
+            <div class="card bg-white rounded-none shadow-sm">
+              <figure>
+                <img class="w-full px-6 pt-8 h-56"
+                  src="./assets/property1.jpg"
+                  alt="property-1" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-bold">Serene Villa </h2>
+                <p class="text-blue-600 font-bold">$50000.00 <span class="text-black">/M</span></p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-yellow-400"
+                 />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked="checked"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                </div>
+                <div class="card-actions justify-between mt-2">
+                  <span><i class="fa-solid fa-bed-pulse"></i> 4 Bedrooms</span> 
+                  <span><i class="fa-solid fa-sink"></i> 2 Bathrooms</span> 
+                </div>
               </div>
             </div>
-          </div>
-          <!-- property-3 -->
-          <div class="card bg-white rounded-none shadow-sm">
-            <figure>
-              <img class="w-full px-6 pt-8 h-56"
-                src="./assets/property3.jpg"
-                alt="property-3" />
-            </figure>
-            <div class="card-body px-6">
-              <h2 class="card-title font-bold">Azure Crest Villa</h2>
-              <p class="text-blue-600 font-bold">$6000.00 <span class="text-black">/M</span></p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                <input
-                  type="radio"
-                  name="rating-2"
-                  class="mask mask-star-2 bg-yellow-400"
-               />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked="checked"/>
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
-              </div>
-              <div class="card-actions justify-between mt-2">
-                <span><i class="fa-solid fa-bed-pulse"></i> 5 Bedrooms</span> 
-                <span><i class="fa-solid fa-sink"></i> 3 Bathrooms</span> 
+            <!-- property-2 -->
+            <div class="card bg-white rounded-none shadow-sm">
+              <figure>
+                <img class="w-full px-6 pt-8 h-56"
+                  src="./assets/property2.webp"
+                  alt="property-2" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-bold">Bella Vista Villa</h2>
+                <p class="text-blue-600 font-bold">$30000.00 <span class="text-black">/M</span></p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-yellow-400"
+                    checked="checked"
+                 />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                </div>
+                <div class="card-actions justify-between mt-2">
+                  <span><i class="fa-solid fa-bed-pulse"></i> 3 Bedrooms</span> 
+                  <span><i class="fa-solid fa-sink"></i> 1 Bathrooms</span> 
+                </div>
               </div>
             </div>
+            <!-- property-3 -->
+            <div class="card bg-white rounded-none shadow-sm">
+              <figure>
+                <img class="w-full px-6 pt-8 h-56"
+                  src="./assets/property3.jpg"
+                  alt="property-3" />
+              </figure>
+              <div class="card-body px-6">
+                <h2 class="card-title font-bold">Azure Crest Villa</h2>
+                <p class="text-blue-600 font-bold">$6000.00 <span class="text-black">/M</span></p>
+                <div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-yellow-400"
+                 />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" checked="checked"/>
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
+                </div>
+                <div class="card-actions justify-between mt-2">
+                  <span><i class="fa-solid fa-bed-pulse"></i> 5 Bedrooms</span> 
+                  <span><i class="fa-solid fa-sink"></i> 3 Bathrooms</span> 
+                </div>
+              </div>
+            </div>
+           </div>
           </div>
-         </div>
       </section>
       <!-- liveable spaces Section-->
       <section class="bg-body py-7 lg:py-10">
@@ -282,7 +281,7 @@
         <div class="container mx-auto px-5 md:px-16">
           <div class="flex flex-col lg:flex-row justify-between gap-10">
             <div
-              class="flex flex-col lg:flex-col md:items-center lg:items-start md:text-center lg:text-start"
+              class="flex flex-col lg:flex-col items-center lg:items-start md:text-center lg:text-start"
             >
               <div>
                 <button
@@ -292,10 +291,10 @@
                   About Us
                 </button>
               </div>
-              <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-md">
+              <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center lg:text-start drop-shadow-md">
                 We design thoughtful,<br />liveable spaces
               </h1>
-              <p class="py-6 text-desc">
+              <p class="py-6 text-desc text-center lg:text-start">
                 We design spaces that blend beauty and functionality, creating comfortable and thoughtful living environments.
               </p>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-1">
@@ -520,12 +519,12 @@
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-md">
               Let's Discuss Next Project
             </h1>
-            <p class="text-desc w-full md:w-3/4 text-center py-3">
+            <p class="text-desc w-full lg:w-3/4 text-center py-3">
               Information forms gather detailed data to streamline processes, capturing essential specifics for accurate analysis and decision-making. They ensure all necessary details are collected for efficient and informed outcomes.
             </p>
           </div>
           <!-- information form -->
-          <div class="flex flex-col lg:flex-row justify-center gap-6 mt-8">
+          <div class="flex flex-col md:flex-row justify-center gap-6 mt-8">
             <!-- xs -->
             <div class="flex-1 space-y-6">
               <input
@@ -563,7 +562,7 @@
             rows="7"
           ></textarea>
           <button
-            class="btn bg-btn_col text-lg font-bold rounded-full hidden md:flex w-full mt-6"
+            class="btn bg-btn_col text-lg font-bold rounded-full md:flex w-full mt-6"
           >
             Send Email
             <i class="fa-solid fa-circle-up rotate-45"></i>
@@ -573,7 +572,7 @@
     </main>
 
     <footer class="bg-black">
-      <section class="footer footer-center rounded py-16">
+      <section class="footer footer-center rounded px-5 py-16">
         <nav class="grid grid-flow-col gap-1">
           <a href="#" class="text-2xl font-bold flex items-center gap-1">
             <svg
@@ -592,7 +591,7 @@
         </nav>
         <nav>
           <div class="grid grid-flow-col gap-4">
-            <p class="text-secondary mx-auto w-3/4 text-base">
+            <p class="text-secondary mx-auto w-full md:w-3/4 text-base">
               Crafting your ideal home with meticulous design and attention to detail. Bringing your vision to life, one room at a time.
             </p>
           </div>
@@ -607,7 +606,7 @@
 
         <aside>
           <button
-            class="btn bg-btn_col text-base font-bold rounded-full hidden md:flex border-none"
+            class="btn bg-btn_col text-base font-bold rounded-full md:flex border-none"
           >
             Book Consultant
             <i class="fa-solid fa-circle-up rotate-45"></i>
