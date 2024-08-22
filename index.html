@@ -51,11 +51,22 @@
       <!-- navigation bar -->
       <section class="container mx-auto px-5 md:px-16 py-5">
         <div class="navbar">
-          <div class="navbar-start gap-1">
+          <div class="navbar-start gap-2">
             <span>
-              <i class="fa-solid fa-circle-up rotate-45 text-btn_col"></i>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 rotate-12 bg-btn_col rounded-full border-4 border-btn_col"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
             </span>
-            <span class="text-xl font-bold">Rinterio</span>
+            <span class="text-2xl font-bold">Rinterio</span>
           </div>
           <div class="navbar-center hidden lg:flex text-primary text-xl">
             <ul class="menu menu-horizontal px-1">
@@ -319,123 +330,42 @@
               accents.
             </p>
           </div>
-        </div>
-        <!-- portfolio cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-">
-          <!-- portfolio-1 -->
-          <div class="flex flex-row bg-base-100 shadow-xl">
-            <figure class="px-10">
-              <img
-                src="./assets/img1.png"
-                alt="portfolio-1"
-                class="rounded-xl pt-6"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-desc font-bold">Commercial</h2>
-              <p class="flex-grow-0 text-secondary">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <div>
-                <button class="btn bg-white text-base font-bold">
-                  View Details
-                </button>
+          <!-- portfolio cards -->
+          <div class="flex items-center">
+            <!-- portfolio-1 -->
+            <div
+              class="flex flex-col lg:flex-row gap-6 rounded-xl border-2 p-5"
+            >
+              <img src="./assets/img1.png" class="rounded-lg" />
+
+              <div class="space-y-3">
+                <h1 class="text-xl font-bold">Commercial</h1>
+                <p>
+                  CommercialThe barn house captivates with its blend of rustic
+                  charm and modern. The barn house captivates with its blend of
+                  rustic charm and modern .
+                </p>
+                <nav>
+                  <a href="#" class="text-bases font-bold inline-flex gap-2"
+                    >View Details
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="size-6 rotate-12 bg-btn_col rounded-full border-4 border-btn_col"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </nav>
               </div>
             </div>
-          </div>
-          <!-- portfolio-2 -->
-          <div class="flex flex-row bg-base-100 shadow-xl">
-            <figure class="px-10">
-              <img
-                src="./assets/img1.png"
-                alt="portfolio-1"
-                class="rounded-xl pt-6"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-desc font-bold">Commercial</h2>
-              <p class="flex-grow-0 text-secondary">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <div>
-                <button class="btn bg-white text-base font-bold">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-3 -->
-          <div class="flex flex-row bg-base-100 shadow-xl">
-            <figure class="px-10">
-              <img
-                src="./assets/img1.png"
-                alt="portfolio-1"
-                class="rounded-xl pt-6"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-desc font-bold">Commercial</h2>
-              <p class="flex-grow-0 text-secondary">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <div>
-                <button class="btn bg-white text-base font-bold">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-4 -->
-          <div class="flex flex-row bg-base-100 shadow-xl">
-            <figure class="px-10">
-              <img
-                src="./assets/img1.png"
-                alt="portfolio-1"
-                class="rounded-xl pt-6"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-desc font-bold">Commercial</h2>
-              <p class="flex-grow-0 text-secondary">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <div>
-                <button class="btn bg-white text-base font-bold">
-                  View Details
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- portfolio-5 -->
-          <div class="flex flex-row bg-base-100 shadow-xl">
-            <figure class="px-10">
-              <img
-                src="./assets/img1.png"
-                alt="portfolio-1"
-                class="rounded-xl pt-6"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title text-desc font-bold">Commercial</h2>
-              <p class="flex-grow-0 text-secondary">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <div>
-                <button class="btn bg-white text-base font-bold">
-                  View Details
-                </button>
-              </div>
-            </div>
+            <!-- portfolio-2 -->
+           
           </div>
         </div>
       </section>
@@ -492,16 +422,56 @@
               />
             </div>
           </div>
-          <br>
-          <textarea class="w-full rounded-2xl outline-none p-5 text-xl" placeholder="Write your message here" rows="7"></textarea>
+          <br />
+          <textarea
+            class="w-full rounded-2xl outline-none p-5 text-xl"
+            placeholder="Write your message here"
+            rows="7"
+          ></textarea>
           <button
-          class="btn bg-btn_col text-lg font-bold rounded-full hidden md:flex w-full mt-6"
-        >Send Email
-          <i class="fa-solid fa-circle-up rotate-45"></i>
-        </button>
+            class="btn bg-btn_col text-lg font-bold rounded-full hidden md:flex w-full mt-6"
+          >
+            Send Email
+            <i class="fa-solid fa-circle-up rotate-45"></i>
+          </button>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="bg-black">
+      <section class="footer footer-center rounded py-16">
+        <nav class="grid grid-flow-col gap-1 text-[#E9E9E9]">
+          <span>
+            <i class="fa-solid fa-circle-up text-xl rotate-45 text-btn_col"></i>
+          </span>
+          <span class="text-2xl font-bold">Rinterio</span>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <p class="text-secondary w-3/4 mx-auto">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+        </nav>
+        <nav class="grid grid-cols-1 md:grid-flow-col gap-4 text-[#E9E9E9]">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Portfolio</a>
+          <a class="link link-hover">Blogs</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+
+        <aside>
+          <button
+            class="btn bg-btn_col text-xl font-bold rounded-full hidden md:flex border-none"
+          >
+            Book Consultant
+            <i class="fa-solid fa-circle-up rotate-45"></i>
+          </button>
+        </aside>
+      </section>
+    </footer>
   </body>
 </html>
